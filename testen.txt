@@ -1,0 +1,74 @@
+	       DoliStudi list = new DoliStudi();
+	    	     
+	    	//3d Füge drei neue Studenten hinzu
+	       list.insert(new Studi("Student01", 12345));
+	       System.out.println(list.toString());
+	    	     
+	       list.insert(new Studi("Student02", 23456));
+	       System.out.println(list.toString());
+	   	     
+	       list.insert(new Studi("Student03", 34567));
+	       System.out.println(list.toString()); 
+	    	     
+	    	     
+	      DoliStudi list2 = new DoliStudi();
+	    	     
+	      //4d Hinzufügen von 3 neuen Elementen
+	      list2.append(new Studi("Maxx", 15));
+	      list2.append(new Studi("Annaa", 670));
+	      list2.append(new Studi("Peterr", 2470));
+	    	     
+	     // Ausgabe der Liste
+	     System.out.println(list2.toString());
+	     
+	     ///Sortierte Liste
+	     DoliStudi liste3 = new DoliStudi();
+	     System.out.println("Sortierte Liste");
+
+	     liste3.insertInOrder(new Studi("A", 8888));
+	     System.out.println(liste3);
+	     liste3.insertInOrder(new Studi("C", 9999));
+	     System.out.println(liste3);
+	     liste3.insertInOrder(new Studi("B", 7777));
+	     System.out.println(liste3);
+	     
+	     ///Elemente suchen
+	     DoliStudi liste4 = new DoliStudi();
+	     Studi s1 = new Studi("Anna", 111);
+	     liste4.insertInOrder(s1);
+	     System.out.println(liste4.enthalten(s1));
+	     Studi s2 = new Studi("Hans", 222);
+	     System.out.println(liste4.enthalten(s2)); 
+	    
+
+
+	     ///Elemente Loeschen
+	     DoliStudi liste5 = new DoliStudi();
+	     Studi s3 = new Studi("Max", 333);
+	     Studi s4 = new Studi("Peter", 444);
+	     Studi s5 = new Studi("Alex", 555);
+
+	     liste5.insertInOrder(s1);
+	     liste5.insertInOrder(s2);
+	     liste5.insertInOrder(s3);
+	     liste5.insertInOrder(s4);
+	     
+	     System.out.println("Liste 5:");
+	     System.out.println(liste5);
+	     
+	     System.out.println("Max loeschen");
+	     liste5.remove(s3);
+	     System.out.println(liste5);
+
+	     System.out.println("Anna loeschen");
+	     liste5.remove(s1);
+	     System.out.println(liste5);
+
+	     System.out.println("Hans loeschen");
+	     liste5.remove(s2);
+	     System.out.println(liste5);
+	      
+	     System.out.println("Alex loeschen");
+	     liste5.remove(s5);
+	     System.out.println(liste5);
+	     

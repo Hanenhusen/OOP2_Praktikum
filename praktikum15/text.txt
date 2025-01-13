@@ -1,0 +1,2 @@
+Es sollen Worte aus mehreren verschiedenen Quellen (FileReader, StringReader, …) parallel
+gelesen werden und in einer einzigen Wortsammlung gezählt werden
