@@ -1,0 +1,1 @@
+moduleSearchIndex = [{"l":"praktikum02"}];updateSearchResults();

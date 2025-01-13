@@ -1,0 +1,6 @@
+/**
+ * 
+ */
+
+module praktikum01 {
+}
